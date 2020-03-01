@@ -1,0 +1,17 @@
+name: master_tests
+
+on:
+  push:
+    branches:
+      - master
+
+steps:
+  - uses: actions/checkout@v2
+  - uses: actions/setup-node@v1
+    with:
+      node-version: "10.x"
+  - run: npm install yarn -g
+  - name: install dependencies
+    run: yarn
+  - name: run tests
+    run: yarn test

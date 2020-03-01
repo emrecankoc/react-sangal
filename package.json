@@ -1,0 +1,66 @@
+{
+  "name": "react-sangal",
+  "version": "1.0.0",
+  "description": "React ui components based on bootstrap",
+  "author": "emrecankoc",
+  "license": "MIT",
+  "repository": "emrecankoc/react-sangal",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!src/**/*.d.ts"
+    ]
+  },
+  "scripts": {
+    "test": "react-scripts-ts test --env=jsdom",
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "prepare": "yarn run build",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "prop-types": "^15.5.4"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/runtime": "^7.8.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-typescript": "^3.0.0",
+    "@rollup/plugin-url": "^4.0.2",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^25.1.3",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-test-renderer": "^16.9.2",
+    "cross-env": "^7.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts-ts": "^3.1.0",
+    "react-test-renderer": "^16.13.0",
+    "rollup": "^1.32.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "typescript": "^3.8.3",
+    "handlebars": "4.0.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
