@@ -23,13 +23,9 @@
     "test": "react-scripts-ts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build",
     "test-ci": "cross-env CI=1 react-scripts-ts test --env=jsdom"
   },
   "dependencies": {
-    "gh-pages": "^2.2.0",
     "prop-types": "^15.5.4"
   },
   "peerDependencies": {
@@ -52,14 +48,14 @@
     "cross-env": "^7.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "handlebars": "4.3.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts-ts": "^3.1.0",
     "react-test-renderer": "^16.13.0",
     "rollup": "^1.32.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
-    "typescript": "^3.8.3",
-    "handlebars": "4.3.0"
+    "typescript": "^3.8.3"
   },
   "files": [
     "dist"
