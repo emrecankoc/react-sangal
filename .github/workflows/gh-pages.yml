@@ -1,0 +1,21 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - gh-pages
+jobs:
+  test-and-build:
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - run: npm install yarn -g
+      - name: install dependencies
+        run: yarn
+      - name: run tests
+        run: yarn test-ci
+      - name: deploy to gh-pages
+        run: yarn deploy

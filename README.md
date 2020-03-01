@@ -4,7 +4,7 @@
 
 React ui components based on bootstrap 4
 
-[![NPM](https://img.shields.io/npm/v/react-sangal.svg)](https://www.npmjs.com/package/react-sangal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)[![Actions Status](https://github.com/emrecankoc/react-sangal/workflows/master_tests/badge.svg)](https://github.com/emrecankoc/react-sangal/actions)
+[![NPM](https://img.shields.io/npm/v/react-sangal.svg)](https://www.npmjs.com/package/react-sangal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Actions Status](https://github.com/emrecankoc/react-sangal/workflows/master_tests/badge.svg)](https://github.com/emrecankoc/react-sangal/actions)
 
 ## Install
 
@@ -54,3 +54,5 @@ class Example extends React.Component {
 ## License
 
 MIT © [emrecankoc](https://github.com/emrecankoc)
+
+PS: Project template based on [create-react-library](https://github.com/transitive-bullshit/create-react-library)
