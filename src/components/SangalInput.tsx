@@ -33,7 +33,7 @@ export interface IInputProps {
   value: string | number;
   className?: string;
   placeholder?: string;
-  onChange: React.ChangeEventHandler;
+  onChange?: React.ChangeEventHandler;
 }
 
 const SangalInput: React.FC<IInputProps> = ({
