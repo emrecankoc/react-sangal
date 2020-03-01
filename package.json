@@ -25,7 +25,8 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "test-ci": "cross-env CI=1 react-scripts-ts test --env=jsdom"
   },
   "dependencies": {
     "gh-pages": "^2.2.0",
